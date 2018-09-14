@@ -1,0 +1,32 @@
+[
+	{
+		"pNameId":"L1",
+		"proId":[1,2,3],
+		"proNameVal":"Z1全面屏6GB+64GB",
+		"proColorVal":["魅夜紫","极致红","瓷釉蓝"],
+		"proPriceVal":"¥1898.00",
+		"proDiscountVal":200,
+		"proNum":1,
+		"proImg":"img/hot-img1.png"	
+	},
+	{
+		"pNameId":"L2",
+		"proId":[1,2,3],
+		"proNameVal":"Y75s全网通4GB+64GB",
+		"proColorVal":["魅夜紫","极致红","瓷釉蓝"],
+		"proPriceVal":"¥2798.00",
+		"proDiscountVal":300,
+		"proNum":1,
+		"proImg":"img/hot-img2.png"	
+	},
+	{
+		"pNameId":"L3",
+		"proId":[1,2,3],
+		"proNameVal":"X21全面屏6GB+128GB",
+		"proColorVal":["魅夜紫","极致红","瓷釉蓝"],
+		"proPriceVal":"¥1298.00",
+		"proDiscountVal":200,
+		"proNum":1,
+		"proImg":"img/hot-img3.png"	
+	}
+]

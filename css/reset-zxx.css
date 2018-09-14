@@ -1,0 +1,47 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+}
+body {
+    color:#333; 
+    font:12px/24px "微软雅黑","SimSun","Arial Narrow",HELVETICA;
+}
+img {
+    border:0;
+}
+input {
+    outline:0;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+    font-weight: normal;
+    font-style: normal;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+  }
+.clearfix:after{ 
+    content:""; 
+    font-size:0; 
+    display:block; 
+    visibility:hidden; 
+    overflow:hidden; 
+    clear:both; 
+    height:0;}

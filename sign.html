@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset-zxx.css">
+    <link rel="stylesheet" href="css/loginAndSign.css">
+</head>
+
+<body>
+    <div id="signWrap">
+        <div class="sign-banner">
+            <p class="signLogo">
+                <a href="#">
+                    <img src="img/sign-logo.jpg" alt="">
+                </a>
+            </p>
+            <h4>vivo帐号注册</h4>
+            <div class="signForm">
+                <input type="text" id="newname" placeholder="请输入手机号" autocomplete="off" />
+                <ul id="nameReq">
+                    <li>*</li>
+                    <li style="display: none">用户名由3-15位的字母，数字，下划线，不能以下划线开头和结尾</li>
+                    <li style="display: none">用户名有效</li>
+                    <li style="display: none">用户名不能为空哦～</li>
+                </ul>
+                <input type="text" id="mailbox" placeholder="请输入邮箱" autocomplete="off" />
+                <ul id="slideList" style="display: none">
+                    <li>
+                        <span><span class="getMail"></span>@qq.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@yahoo.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@msn.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@hotmail.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@aol.com</span>
+                    </li>
+                    <li>
+                        <span><span class="getMail"></span>@ask.com</span>
+                    </li>
+                </ul>
+                <ul id="mailReq">
+                    <li>*</li>
+                    <li style="display: none">您输入的单个邮件格式有误，请重新核对后再输入</li>
+                    <li style="display: none">邮箱有效</li>
+                    <li style="display: none">邮箱不能为空哦～</li>
+                </ul>
+                <input type="password" id="newpwd" placeholder="密码" autocomplete="off" />
+                <ul id="pwdReq">
+                    <li>*</li>
+                    <li style="display: none">密码由6-18位的字母，数字，下划线组成，不能以下划线开头</li>
+                    <li style="display: none">密码正确</li>
+                    <li style="display: none">密码不能为空哦～</li>
+                </ul>
+                <input type="text" id="verCode">
+                <span class="randCode" onselectstart="return false;"></span>
+                <ul id="codeReq">
+                    <li style="display: none">验证码有误</li>
+                    <li style="display: none">输入正确</li>
+                    <li style="display: none">验证码不能为空哦～</li>
+                </ul>
+                <input type="checkbox" id="check" />
+                <span>我已阅读并接受《vivo服务协议》</span>
+                <ul id="mustCk">
+                    <li style="display: none">请勾选服务协议～</li>
+                </ul>
+                <input type="button" id="signBtn" value="完成注册" />
+            </div>
+        </div>
+        <div class="footer-tips">
+            <p> 在线客服 400-678-9688(24小时全国服务热线)</p>
+            <p> COPYRIGHT © 1996-2017 ALL RIGHTS RESERVED.粤ICP备05100288号</p>
+        </div>
+    </div>
+    <!-- 注册 end -->
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/ajaxAphp/data.js"></script>

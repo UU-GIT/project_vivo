@@ -1,0 +1,290 @@
+//公共的position
+@mixin pubPosition($left:0,$top:0){
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+//登录和注册的box框样式
+.wrapBox{
+  position: absolute;
+  top: 130px;
+  right: 40px;
+  width: 380px;
+  min-height: 480px;
+  padding: 30px 30px 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+//用户名和密码框公共
+.formInput {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  /* vertical-align: middle; */
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  color: #333;
+}
+//input框聚焦的时候
+.input_focus {
+  border: 1px solid #2899f7;
+}
+//登录和注册的h2
+.login_sign_h2 {
+  font-size: 24px; color: #4c5248;margin-bottom: 30px;
+}
+//登录的注册按钮
+.login_sign_button {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  border-radius: 6px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  background-color: #2899f7;
+  cursor: pointer;
+  border: none;
+}
+#redTip {
+  position: absolute;
+  right: 0;
+}
+
+.main {width: 1200px; margin: 0 auto; position: relative;}
+//登录页面
+.wrap { 
+  background: #2a0547;
+  .fix-logo{
+    @include pubPosition();
+    img {
+      display: block;
+      width: 97px;
+      height: 97px;
+    }
+  }
+  .login-box,.sign-box {
+    @extend .wrapBox;
+    h2 {
+      @extend .login_sign_h2;
+    }
+    .hasNum {
+      float: right;
+      margin-bottom: 10px;
+      text-decoration: underline;
+      color: #2899f7;
+    }
+    
+  }
+  #username,#userpwd,#newname,#newpwd {
+    @extend .formInput;
+    &:focus {
+      @extend .input_focus;
+    }
+  }
+  #logo-web,#sign-web {
+    @extend .login_sign_button;
+  }
+  .sign a {
+    @extend .formInput;
+    &:hover {
+      border: 1px solid #2899f7;
+    }
+  }
+  .auto-box {
+    margin-bottom: 6px;
+    p:first-child {
+      float: left;
+    }
+    p:last-child {
+      float: right;
+    }
+  }
+  .method-enter {
+    padding-left: 86px; 
+    margin-top: 10px;
+    li {
+      float: left;
+      margin: 0 6px;
+    }
+    img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+.footer-tips {
+  text-align: center;
+  padding: 20px 0;
+  p:first-child {
+    color: #666666;
+  }
+  p:last-child {
+    color: #9d9d9d;
+    padding: 10px 0;
+  }
+}
+
+//注册页面
+
+//公共的验证样式
+.pubReq {
+    position: absolute;
+    text-align: left;
+    right: -262px;
+    width: 252px;
+}
+
+#signWrap {
+  background-color: #f7f7f7;
+  overflow: hidden;
+  .sign-banner{
+    width: 900px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 50px 30px 60px;
+    text-align: center;
+    box-sizing: border-box;
+    .signLogo {
+      padding-bottom: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+    h4 {
+      margin: 0;
+      color: #4c4c4c;
+      font-size: 18px;
+    }
+    .signForm {
+      width: 332px;
+      padding: 30px 0;
+      margin: 0 auto;
+      position: relative;
+      #newname,#newpwd,#signBtn,#mailbox{
+        width: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        display: inline-block;
+        border: none;
+        border-radius: 0;
+        padding-left: 16px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+      #newname,#newpwd,#verCode,.randCode,#mailbox {
+        border: 1px solid #e1e1e1;
+      }
+      #verCode {
+        width: 50%;
+        line-height: 40px;
+        float: left;
+        box-sizing: border-box;
+        padding-left: 10px;
+      }
+      .randCode {
+        float: right;
+        // display: inline-block;
+        width: 50%;
+        height: 44px;
+        line-height: 44px;
+        box-sizing: border-box;
+        border-left: 0;
+        background: url(../img/randbg.png) no-repeat;
+      }
+      #check {
+        margin: 16px 0;
+      }
+      #signBtn{
+        background-color: #2899f7;
+        cursor: pointer;
+        color: white;
+      }
+
+
+      //验证显示
+      #nameReq {
+        // display: none;
+        @extend .pubReq;
+        top: 43px;
+        li {
+          position: absolute;
+          color: red;
+          &:nth-child(3){
+            color: green;
+          }
+        }
+      }
+      #mailReq{
+        @extend .pubReq;
+        top: 110px;
+        li {
+          position: absolute;
+          color: red;
+          &:nth-child(3){
+            color: green;
+          }
+        }
+      }
+      #slideList {
+        position: absolute;
+        left: 0;
+        top: 153px;
+        line-height: 32px;
+        background: #E6E6E6;
+        width: 100%;
+        text-align: left;
+        li{
+          padding: 0 16px;
+          &:hover{
+            background: #9d9d9d;
+          }
+        }
+      }
+      #pwdReq {
+        @extend .pubReq;
+        top: 180px;
+        li {
+          position: absolute;
+          color: red;
+          &:nth-child(3){
+            color: green;
+          }
+        }
+      }
+      .randCode {
+          font-size: 28px;
+          font-style: italic;
+          letter-spacing: 6px;
+          color: #77c165;
+      }
+      #codeReq {
+          @extend .pubReq;
+          top: 246px;
+          li {
+          position: absolute;
+          color: red;
+          &:nth-child(2){
+            color: green;
+          }
+        }
+      }
+      #mustCk {
+          @extend .pubReq;
+          top: 290px;
+          li {
+          position: absolute;
+          color: red;
+        }
+      }
+    }
+  }
+}

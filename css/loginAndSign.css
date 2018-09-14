@@ -1,0 +1,301 @@
+.wrapBox, .wrap .login-box, .wrap .sign-box {
+  position: absolute;
+  top: 130px;
+  right: 40px;
+  width: 380px;
+  min-height: 480px;
+  padding: 30px 30px 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.formInput, .wrap #username, .wrap #userpwd, .wrap #newname, .wrap #newpwd, .wrap .sign a {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  /* vertical-align: middle; */
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.input_focus, .wrap #username:focus, .wrap #userpwd:focus, .wrap #newname:focus, .wrap #newpwd:focus {
+  border: 1px solid #2899f7;
+}
+
+.login_sign_h2, .wrap .login-box h2, .wrap .sign-box h2 {
+  font-size: 24px;
+  color: #4c5248;
+  margin-bottom: 30px;
+}
+
+.login_sign_button, .wrap #logo-web, .wrap #sign-web {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  border-radius: 6px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  background-color: #2899f7;
+  cursor: pointer;
+  border: none;
+}
+
+#redTip {
+  position: absolute;
+  right: 0;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap {
+  background: #2a0547;
+}
+
+.wrap .fix-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrap .fix-logo img {
+  display: block;
+  width: 97px;
+  height: 97px;
+}
+
+.wrap .login-box .hasNum, .wrap .sign-box .hasNum {
+  float: right;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: #2899f7;
+}
+
+.wrap .sign a:hover {
+  border: 1px solid #2899f7;
+}
+
+.wrap .auto-box {
+  margin-bottom: 6px;
+}
+
+.wrap .auto-box p:first-child {
+  float: left;
+}
+
+.wrap .auto-box p:last-child {
+  float: right;
+}
+
+.wrap .method-enter {
+  padding-left: 86px;
+  margin-top: 10px;
+}
+
+.wrap .method-enter li {
+  float: left;
+  margin: 0 6px;
+}
+
+.wrap .method-enter img {
+  width: 26px;
+  height: 26px;
+}
+
+.footer-tips {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-tips p:first-child {
+  color: #666666;
+}
+
+.footer-tips p:last-child {
+  color: #9d9d9d;
+  padding: 10px 0;
+}
+
+.pubReq, #signWrap .sign-banner .signForm #nameReq, #signWrap .sign-banner .signForm #mailReq, #signWrap .sign-banner .signForm #pwdReq, #signWrap .sign-banner .signForm #codeReq, #signWrap .sign-banner .signForm #mustCk {
+  position: absolute;
+  text-align: left;
+  right: -262px;
+  width: 252px;
+}
+
+#signWrap {
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+#signWrap .sign-banner {
+  width: 900px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 50px 30px 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#signWrap .sign-banner .signLogo {
+  padding-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+#signWrap .sign-banner h4 {
+  margin: 0;
+  color: #4c4c4c;
+  font-size: 18px;
+}
+
+#signWrap .sign-banner .signForm {
+  width: 332px;
+  padding: 30px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+#signWrap .sign-banner .signForm #newname, #signWrap .sign-banner .signForm #newpwd, #signWrap .sign-banner .signForm #signBtn, #signWrap .sign-banner .signForm #mailbox {
+  width: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  display: inline-block;
+  border: none;
+  border-radius: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#signWrap .sign-banner .signForm #newname, #signWrap .sign-banner .signForm #newpwd, #signWrap .sign-banner .signForm #verCode, #signWrap .sign-banner .signForm .randCode, #signWrap .sign-banner .signForm #mailbox {
+  border: 1px solid #e1e1e1;
+}
+
+#signWrap .sign-banner .signForm #verCode {
+  width: 50%;
+  line-height: 40px;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+#signWrap .sign-banner .signForm .randCode {
+  float: right;
+  width: 50%;
+  height: 44px;
+  line-height: 44px;
+  box-sizing: border-box;
+  border-left: 0;
+  background: url(../img/randbg.png) no-repeat;
+}
+
+#signWrap .sign-banner .signForm #check {
+  margin: 16px 0;
+}
+
+#signWrap .sign-banner .signForm #signBtn {
+  background-color: #2899f7;
+  cursor: pointer;
+  color: white;
+}
+
+#signWrap .sign-banner .signForm #nameReq {
+  top: 43px;
+}
+
+#signWrap .sign-banner .signForm #nameReq li {
+  position: absolute;
+  color: red;
+}
+
+#signWrap .sign-banner .signForm #nameReq li:nth-child(3) {
+  color: green;
+}
+
+#signWrap .sign-banner .signForm #mailReq {
+  top: 110px;
+}
+
+#signWrap .sign-banner .signForm #mailReq li {
+  position: absolute;
+  color: red;
+}
+
+#signWrap .sign-banner .signForm #mailReq li:nth-child(3) {
+  color: green;
+}
+
+#signWrap .sign-banner .signForm #slideList {
+  position: absolute;
+  left: 0;
+  top: 153px;
+  line-height: 32px;
+  background: #E6E6E6;
+  width: 100%;
+  text-align: left;
+}
+
+#signWrap .sign-banner .signForm #slideList li {
+  padding: 0 16px;
+}
+
+#signWrap .sign-banner .signForm #slideList li:hover {
+  background: #9d9d9d;
+}
+
+#signWrap .sign-banner .signForm #pwdReq {
+  top: 180px;
+}
+
+#signWrap .sign-banner .signForm #pwdReq li {
+  position: absolute;
+  color: red;
+}
+
+#signWrap .sign-banner .signForm #pwdReq li:nth-child(3) {
+  color: green;
+}
+
+#signWrap .sign-banner .signForm .randCode {
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: 6px;
+  color: #77c165;
+}
+
+#signWrap .sign-banner .signForm #codeReq {
+  top: 246px;
+}
+
+#signWrap .sign-banner .signForm #codeReq li {
+  position: absolute;
+  color: red;
+}
+
+#signWrap .sign-banner .signForm #codeReq li:nth-child(2) {
+  color: green;
+}
+
+#signWrap .sign-banner .signForm #mustCk {
+  top: 290px;
+}
+
+#signWrap .sign-banner .signForm #mustCk li {
+  position: absolute;
+  color: red;
+}
